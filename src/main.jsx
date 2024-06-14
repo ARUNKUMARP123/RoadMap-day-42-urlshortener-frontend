@@ -25,7 +25,7 @@ createRoot(document.getElementById('root')).render(
       
       <Router>
       <CssBaseline />
-      <Container maxWidth="sm">
+      <Container maxWidth="lg">
         <ErrorBoundary>
           <Routes>
             <Route path="*" element={<App baseUrl={baseUrl} />} />
