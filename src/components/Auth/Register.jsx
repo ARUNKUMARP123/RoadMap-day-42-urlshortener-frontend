@@ -15,6 +15,7 @@ const Register = ({ baseUrl }) => {
     e.preventDefault();
     try {
       await axios.post(`${baseUrl}/api/auth/register`, { firstName, lastName, email, password });
+     alert("Check your mail and click the Activation link.")
       navigate('/login');
     } catch (error) {
       console.error(error.response.data.message);

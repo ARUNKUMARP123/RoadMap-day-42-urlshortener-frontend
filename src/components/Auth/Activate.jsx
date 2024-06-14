@@ -34,7 +34,7 @@ const Activate = ({ baseUrl }) => {
             <Typography variant="h4" component="h1" gutterBottom>
               Account Activation
             </Typography>
-            <Alert severity={message.includes('successfully') ? 'success' : 'error'}>
+            <Alert severity={message.includes('Account activated') ? 'success' : 'error'}>
               {message}
             </Alert>
             <Button
