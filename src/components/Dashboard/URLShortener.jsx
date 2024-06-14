@@ -27,7 +27,7 @@ const URLShortener = ({ baseUrl, onShorten }) => {
   };
 
   return (
-    <Container maxWidth="sm">
+    <Container  sx={{ mt: 3 }} maxWidth="sm">
       <Box display="flex" flexDirection="column" alignItems="center">
         <Typography variant="h4" component="h1" gutterBottom>URL Shortener</Typography>
         <form onSubmit={handleSubmit}>

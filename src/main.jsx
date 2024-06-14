@@ -14,7 +14,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import './index.css';
 import Activate from './components/Auth/Activate';
 import ErrorBoundary from './components/ErrorBoundary';
-
+import Container from '@mui/material/Container';
 const theme = createTheme();
 const localUrl = 'http://localhost:5000';
 const baseUrl = import.meta.env.VITE_API_URL || localUrl;
@@ -22,8 +22,10 @@ const baseUrl = import.meta.env.VITE_API_URL || localUrl;
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <CssBaseline />
+      
       <Router>
+      <CssBaseline />
+      <Container maxWidth="sm">
         <ErrorBoundary>
           <Routes>
             <Route path="*" element={<App baseUrl={baseUrl} />} />
@@ -37,7 +39,9 @@ createRoot(document.getElementById('root')).render(
             <Route path="/activate/:token" element={<Activate baseUrl={baseUrl} />} />
           </Routes>
         </ErrorBoundary>
+        </Container>
       </Router>
+ 
     </ThemeProvider>
   </React.StrictMode>
 );

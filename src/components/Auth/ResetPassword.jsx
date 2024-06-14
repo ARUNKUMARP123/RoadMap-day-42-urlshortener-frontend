@@ -19,7 +19,7 @@ const ResetPassword = ({ baseUrl }) => {
   };
 
   return (
-    <Container maxWidth="xs">
+    <Container  sx={{ mt: 3 }} maxWidth="xs">
       <Box display="flex" flexDirection="column" alignItems="center">
         <Typography variant="h4" component="h1" gutterBottom>Reset Password</Typography>
         <form onSubmit={handleSubmit}>

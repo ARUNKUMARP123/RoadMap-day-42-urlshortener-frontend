@@ -51,7 +51,7 @@ const URLTable = ({ baseUrl, refreshFlag }) => {
   }
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer  sx={{ mt: 3 }} component={Paper}>
       <Table>
         <TableHead>
           <TableRow>

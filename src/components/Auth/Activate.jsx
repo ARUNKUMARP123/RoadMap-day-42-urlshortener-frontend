@@ -25,7 +25,7 @@ const Activate = ({ baseUrl }) => {
   }, [token, baseUrl]);
 
   return (
-    <Container maxWidth="sm">
+    <Container  sx={{ mt: 3 }} maxWidth="sm">
       <Box display="flex" flexDirection="column" alignItems="center" mt={4}>
         {loading ? (
           <CircularProgress />

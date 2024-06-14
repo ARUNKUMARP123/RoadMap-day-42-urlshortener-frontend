@@ -12,7 +12,7 @@ const Dashboard = ({baseUrl}) => {
     setRefreshFlag(prevFlag => !prevFlag);
   };
   return (
-    <Container maxWidth="lg">
+    <Container   sx={{ mt: 3 }} maxWidth="lg">
       <Box display="flex" flexDirection="column" alignItems="center" mt={4}>
         <Typography variant="h4" component="h1" gutterBottom>Dashboard</Typography>
         <URLShortener baseUrl={baseUrl} onShorten={handleRefresh} />
